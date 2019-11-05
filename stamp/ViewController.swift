@@ -24,7 +24,7 @@ class ViewController: UIViewController, UIImagePickerControllerDelegate, UINavig
         let location: CGPoint = touch.location(in: self.view)
         
         if imageIndex != 0{
-            ImageView = UIImageView(frame: CGRect(x: 0, y: 0, width: 40, height: 40))
+            ImageView = UIImageView(frame: CGRect(x: 0, y: 0, width: 70, height: 70))
             
             let image: UIImage = UIImage(named: imageNameArray[imageIndex - 1])!
             ImageView.image = image
@@ -33,22 +33,15 @@ class ViewController: UIViewController, UIImagePickerControllerDelegate, UINavig
             
             self.view.addSubview(ImageView)
         }
-        
-        
-        
-        
     }
     
-    
-    
-    
-    
 
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view.
     }
-
+    
     @IBAction func selectedFirst(){
         imageIndex = 1
     }
